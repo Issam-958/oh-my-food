@@ -1,0 +1,397 @@
+* {
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  position: relative;
+  /* min-height: 100vh; */
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+  align-items: center;
+  gap: 15px;
+}
+
+.localisation-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.section-reservez {
+  text-align: center;
+  padding: 30px;
+}
+
+.reservez-description {
+  margin-bottom: 50px;
+}
+
+.explorez-button {
+  margin-top: 30px;
+  padding: 14px 16px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  /* background-color: rgba(223, 73, 180, 0.9); */
+  background-image: linear-gradient(0deg, #9536dc, #ff79da);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.explorez-button:hover {
+  opacity: 0.8;
+
+  box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 60%);
+}
+
+.section-fonctionnement {
+  padding: 25px 15px;
+}
+
+.fonctionnement-container {
+  max-width: 1000px;
+}
+
+.list-container {
+  list-style: none;
+
+  padding: 0px;
+}
+
+.list-element {
+  display: flex;
+  padding: 24px;
+  margin: 16px 0px 16px 12px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 15%);
+  border-radius: 20px;
+  background-color: #f6f6f6;
+}
+
+.list-element i {
+  margin-right: 14px;
+  color: grey;
+}
+
+.list-element-b {
+  display: flex;
+  padding: 24px;
+  margin: 16px 0px 16px 12px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 15%);
+  border-radius: 20px;
+  background-color: #f6f6f6;
+}
+
+.list-element-b i {
+  margin-right: 14px;
+  color: grey;
+}
+
+.list-element-b:hover {
+  background-color: #f5e8ff;
+}
+
+.list-element-b:hover .font-store {
+  color: #9356dc;
+}
+
+.section-restaurants {
+  background-color: #f6f6f6;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  /* height: 300px; */
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-card {
+  height: 12rem;
+  width: 100%;
+  border: 0 solid transparent;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 8px;
+  background-color: #9356dc;
+  color: white;
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.list-container li {
+  position: relative;
+}
+
+.section-restaurants {
+  padding: 32px 16px;
+}
+
+.container-restaurant {
+  max-width: 1280px;
+}
+
+.nouveau {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+
+.card-description {
+  /* height: 70px; */
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.container-description {
+  flex: 1;
+}
+
+.title-card {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* .heart-card:hover {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+} */
+
+.text-card {
+  margin: 0;
+}
+
+.footer {
+  background-color: #353535;
+}
+
+/* .footer .container-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+} */
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
+.footer-logo {
+  color: #fff;
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
+
+.list-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-element {
+  margin: 0.5rem 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-list-element:first-child {
+  margin-top: 0;
+}
+
+.footer-list-element i {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.link-footer {
+  color: white;
+  text-decoration: none;
+}
+
+/* .heart-card:hover .fas {
+  color: purple;
+}
+
+.heart-card .fas {
+  color: black;
+} */
+
+@media (min-width: 1080px) {
+  .fonctionnement-container {
+    max-width: none;
+  }
+
+  .list-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .container-restaurant {
+    max-width: none;
+    width: 100%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .container-footer {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 290px) {
+  .explorez-button {
+    display: block;
+    padding: 8px;
+  }
+}
+
+/* !!! ANIMATION LOAD !!! */
+
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  animation: hide-spinner 3s linear;
+  visibility: hidden;
+  height: 40px;
+  width: 40px;
+}
+
+@keyframes hide-spinner {
+  from {
+    visibility: visible;
+  }
+
+  to {
+    visibility: hidden;
+  }
+}
+
+.main {
+  animation: loading 3s;
+}
+
+.header {
+  /* position: relative; */
+  animation: loading 3s;
+}
+.footer {
+  animation: loading 3s;
+}
+
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 20%;
+  }
+}
+.rotate {
+  animation: rotate 1s linear infinite;
+  color: #9356dc;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* !!! ANIMATION COEUR !!! */
+
+.heart-card {
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.heart-card i {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-card i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.heart-card .fas {
+  color: transparent;
+  opacity: 0;
+  transition: 0.5s;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+}
+
+.heart-card:hover .fas {
+  opacity: 1;
+  transition: 1s;
+}
